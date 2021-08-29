@@ -1,0 +1,196 @@
+body {
+    background-color:aqua;
+    margin: auto;
+}
+
+.item {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(226, 183, 43);
+    margin: 2rem;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.main-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+ol{
+    margin: auto;
+    text-align: center;
+}
+.item1{
+   animation-name: item-rotate ;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   background-color: blueviolet;
+}
+
+
+@keyframes item-rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.item2{
+    animation-name: item-skew ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+   background-color: chocolate;
+ }
+ 
+ 
+ @keyframes item-skew {
+     0%{
+         transform: skew(30deg);
+        
+     }
+     100%{
+        transform: skew(-30deg);
+       
+    }
+     
+ }
+
+ .item3{
+    animation-name: item-skew2 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+   background-color: darkblue;
+ }
+ 
+ 
+ @keyframes item-skew2 {
+     0%{
+         transform: skewY(30deg);
+        
+     }
+     100%{
+        transform: skewY(-30deg);
+       
+    }
+     
+ }
+
+ .item4-2{
+    animation-name: item-scalex ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    border: 2px solid brown;
+    background-color: coral;
+ }
+ 
+ 
+ @keyframes item-scalex {
+     100%{
+         transform: scaleX(0.5);
+     }
+     
+ }
+ 
+ .item4-1{
+    animation-name: item-scaley ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    border: 2px solid brown;
+    background-color: rgb(30, 163, 25);
+ }
+ 
+ 
+ @keyframes item-scaley {
+     100%{
+         transform: scaleY(0.5);
+     }
+     
+ }
+
+ .item4-3{
+    animation-name: item-rotatec ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    border: 2px solid brown;
+    background-color: rgb(85, 129, 179);
+ }
+ 
+ 
+ @keyframes item-rotatec {
+     100%{
+         transform: rotate(95deg);
+     }
+     
+ }
+
+ .link{
+     text-align: center;
+ }
+
+
+ /* page 2 */
+
+ .container-p2{
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .box-p2{
+height: 100px;
+width: 100px;
+background-color: cornflowerblue;
+margin: 2rem;
+transition: all 4s ;
+}
+
+
+
+
+.box1:hover{
+    width: 300px;
+}
+
+.box2:hover{
+    width: 300px;
+    height: 300px;
+}
+.box3:hover{
+    width: 300px;
+transition-timing-function: linear;
+}
+
+.box4:hover{
+    width: 300px;
+transition-timing-function: ease;
+}
+
+.box5:hover{
+    width: 300px;
+transition-timing-function: ease-in;
+}
+
+.box6:hover{
+    width: 300px;
+transition-timing-function: ease-out;
+}
+
+.box7:hover{
+    width: 300px;
+transition-timing-function: ease-in-out;
+}
+
